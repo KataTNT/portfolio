@@ -35,8 +35,17 @@ export function ProjectsWindow() {
 
               {isOpen && (
                 <div className="ml-6 mt-3 flex flex-col gap-3 border-l border-border pl-4">
-                  <p className="text-xs text-terminal-amber">$ {project.command}</p>
-                  <p className="text-pretty leading-relaxed text-foreground/90">{project.details}</p>
+                  <p className="text-xs text-terminal-amber">
+                    $ <code className="font-mono">{project.command}</code>
+                  </p>
+                  <ul className="flex flex-col gap-1">
+                    {project.details.map((point, i) => (
+                      <li key={i} className="flex gap-2 text-pretty leading-relaxed text-foreground/90">
+                        <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-terminal-green" aria-hidden="true" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                   <div className="flex flex-wrap gap-2">
                     {project.stack.map((tech) => (
                       <span
