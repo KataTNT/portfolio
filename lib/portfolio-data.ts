@@ -8,8 +8,10 @@ export const profile = {
   status: "open_to_work",
   uptime: "10y 9mo",
   email: "tnt.kata1894@gmail.com",
-  github: "https://github.com/KataTNT",
-  linkedin: "https://linkedin.com/in/triettn",
+  github_username: "KataTNT",
+  github_url: "https://github.com/KataTNT",
+  linkedin_username: "triettn",
+  linkedin_url: "https://linkedin.com/in/triettn",
 }
 
 export type SkillGroup = {
