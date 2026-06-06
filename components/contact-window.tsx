@@ -10,7 +10,7 @@ const links = [
 
 export function ContactWindow() {
   return (
-    <TerminalWindow id="contact" title="~/contact" command="./init-connection.sh">
+    <TerminalWindow id="contact" title="~/contact" command="contact/init-connection.sh">
       <p className="text-pretty leading-relaxed text-foreground/90">
         Open to senior DevOps / SRE roles and consulting. Send a packet and I&apos;ll respond within one business day.
       </p>
