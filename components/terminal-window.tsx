@@ -31,7 +31,7 @@ export function TerminalWindow({ title, command, children, className, id }: Term
           <p className="flex flex-wrap items-center gap-2 text-xs">
             <span className="text-terminal-green">visitor@portfolio</span>
             <span className="text-muted-foreground">:~$</span>
-            <span className="text-foreground">{command}</span>
+            <code className="text-foreground">{command}</code>
           </p>
         )}
         {children}
