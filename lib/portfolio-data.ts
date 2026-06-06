@@ -1,6 +1,6 @@
 export const profile = {
   name: "Triet Thai",
-  handle: "root@portfolio",
+  handle: "kata@portfolio",
   role: "Senior DevOps Engineer",
   location: "Ho Chi Minh City, VN",
   summary:
