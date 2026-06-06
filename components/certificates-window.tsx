@@ -5,7 +5,7 @@ import { TerminalWindow } from "@/components/terminal-window"
 export function CertificatesWindow() {
   return (
     <TerminalWindow id="certificates" title="~/certs — gpg --list-keys" command="ls certs/ --verify">
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="flex flex-col gap-3">
         {certificates.map((cert) => (
           <div
             key={cert.id}
