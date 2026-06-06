@@ -4,7 +4,7 @@ import { TerminalWindow } from "@/components/terminal-window"
 
 export function CertificatesWindow() {
   return (
-    <TerminalWindow id="certificates" title="~/certificates" command="ls -la certificates/">
+    <TerminalWindow id="certificates" title="~/certificates" command="cert-verify -d certificates/">
       <div className="flex flex-col gap-3">
         {certificates.map((cert) => (
           <div
