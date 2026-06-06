@@ -10,7 +10,7 @@ export function ExperienceWindow() {
   const [open, setOpen] = useState<string | null>(experiences[0]?.id ?? null)
 
   return (
-    <TerminalWindow id="experience" title="~/experience" command="cat career.log">
+    <TerminalWindow id="experience" title="~/experience" command="cat experience/career.log">
       <ol className="flex flex-col">
         {experiences.map((exp) => {
           const isOpen = open === exp.id
