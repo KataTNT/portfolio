@@ -3,7 +3,7 @@ import { TerminalWindow } from "@/components/terminal-window"
 
 export function SkillsWindow() {
   return (
-    <TerminalWindow id="skills" title="~/skills" command="list-skills -d skills/ -group-by=category">
+    <TerminalWindow id="skills" title="~/skills" command="ls -group-by=category skills/">
       <div className="flex flex-col gap-4">
         {skills.map((group) => (
           <div key={group.category} className="flex flex-col gap-2">
