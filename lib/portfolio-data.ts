@@ -72,7 +72,7 @@ export const projects: Project[] = [
   {
     id: "dbs-replatforming",
     name: "dbs-replatforming",
-    command: "kubectl apply -f platform/",
+    command: "kubectl apply -f dbs-platform/",
     description: "Replatforming the Digital Banking System (DBS) - Open Banking from standalone Docker hosts to Kubernetes cluster, as a foundational step for cloud migration.",
     details: [
       "Planned, architected & deployed the high availability, air-gapped on-premises K8s cluster, achieved 99.9% uptime.",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
   {
     id: "esb-ibft",
     name: "esb-ibft",
-    command: "./forge build --release",
+    command: "./esb upgrade",
     description: "The modern Enterprise Service Bus (ESB) system replaces the outdated system - IBM Integration Bus (IIB), which integrates with NAPAS IBFT v2.0.",
     details: [
       "Architected, deployed infrastructure and applications across environments, ensuring compliance with PCI DSS, and achieved SLI 99%.",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
   {
     id: "notification-hub",
     name: "notification-hub",
-    command: "helm install observe ./observe",
+    command: "./notify --rearchitect",
     description: "The centralized microservices notification system replaces discrete monolith notification systems (including SMS, email, push notifications) and integrates new channels like OTT messaging applications.",
     details: [
       "Rearchitected & deployed a highly scalable notification system on the cloud-native platform, improving throughput and resilience for critical banking operations.",
