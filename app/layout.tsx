@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'root@devops:~ | Portfolio',
+  title: 'kata@portfolio:~ | Portfolio',
   description: 'DevOps Engineer portfolio — infrastructure, automation, and cloud terminal.',
   generator: 'v0.app',
   icons: {
