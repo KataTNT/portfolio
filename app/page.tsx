@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen">
       <TopNav />
       <main className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-8">
-        <TerminalWindow id="about" title="root@devops:~ — bootlog" className="min-h-[20rem]">
+        <TerminalWindow id="about" title="kata@portfolio:~ — bootlog" className="min-h-[20rem]">
           <HeroBoot />
         </TerminalWindow>
 
