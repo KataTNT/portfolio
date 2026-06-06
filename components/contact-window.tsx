@@ -4,8 +4,8 @@ import { TerminalWindow } from "@/components/terminal-window"
 
 const links = [
   { label: "email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
-  { label: "github", value: "github.com/alexmercer", href: profile.github, Icon: Code2 },
-  { label: "linkedin", value: "in/alexmercer", href: profile.linkedin, Icon: Globe },
+  { label: "github", value: profile.github_username, href: profile.github_url, Icon: Code2 },
+  { label: "linkedin", value: profile.linkedin_username, href: profile.linkedin_url, Icon: Globe },
 ]
 
 export function ContactWindow() {
