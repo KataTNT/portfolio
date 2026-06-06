@@ -61,7 +61,7 @@ export type Project = {
   name: string
   command: string
   description: string
-  details: string
+  details: string[]
   stack: string[]
   url?: string
 }
@@ -72,11 +72,12 @@ export const projects: Project[] = [
     name: "dbs-replatforming",
     command: "kubectl apply -f platform/",
     description: "Replatforming the Digital Banking System (DBS) - Open Banking from standalone Docker hosts to Kubernetes cluster, as a foundational step for cloud migration.",
-    details:
+    details: [
       "Planned, architected & deployed the high availability, air-gapped on-premises K8s cluster, achieved 99.9% uptime.",
       "Standardized CI/CD processes by developing Helm charts for 25+ microservices and consolidated their disparate build pipelines to a minimum, resulting in an 80% reduction in managed pipeline complexity.",
       "Established advanced deployment strategies (rolling updates, readiness/liveness probes, HPA) to ensure near-zero downtime during application delivery/updates.",
       "Implemented Vault for centralized secret management integrated with Kubernetes, ensuring compliance and automating key rotation.",
+    ],
     stack: ["Kubernetes", "Cilium", "HashiCorp Vault", "GitLab CI", "Jenkins", "Helm", "Ansible", "Harbor", "Nexus", "NGINX", "RabbitMQ", "Redis", "MySQL", "Spring Boot", "Angular JS"],
   },
   {
@@ -84,9 +85,10 @@ export const projects: Project[] = [
     name: "esb-ibft",
     command: "./forge build --release",
     description: "The modern Enterprise Service Bus (ESB) system replaces the outdated system - IBM Integration Bus (IIB), which integrates with NAPAS IBFT v2.0.",
-    details:
+    details: [
       "Architected, deployed infrastructure and applications across environments, ensuring compliance with PCI DSS, and achieved SLI 99%",
       "Implemented a full-stack observability solution using Instana, including 100% microservices monitoring and the OpenShift cluster.",
+    ],
     stack: ["Red Hat OpenShift", "IBM Fusion", "IBM CP4I", "IBM ACE", "IBM MQ", "IBM Instana", "ISO 8583"],
   },
   {
@@ -94,9 +96,10 @@ export const projects: Project[] = [
     name: "notification-hub",
     command: "helm install observe ./observe",
     description: "The centralized microservices notification system replaces discrete monolith notification systems (including SMS, email, push notifications) and integrates new channels like OTT messaging applications.",
-    details:
+    details: [
       "Rearchitected & deployed a highly scalable notification system on the cloud-native platform, improving throughput and resilience for critical banking operations.",
       "Implemented and managed Kong Ingress Controller on Kubernetes cluster to standardize API Gateway services, improving API routing efficiency.",
+    ],
     stack: ["Kubernetes", "Kong", "Kafka", "PostgreSQL", "Spring Boot"],
   },
 ]
@@ -119,7 +122,7 @@ export const experiences: Experience[] = [
     period: "2024/09 — 2025/09",
     current: false,
     highlights: [
-      "Designed, built and optimized CI/CD pipelines to automate software delivery."
+      "Designed, built and optimized CI/CD pipelines to automate software delivery.",
       "Implemented DevSecOps practices by integrating SCA, SAST, Container Image Scanning, and Secrets Management into CI/CD pipelines.",
       "Architected, deployed and managed highly available Kubernetes clusters on cloud providers and on-premises.",
       "Led the design and implementation of microservices architecture to modernize existing monolithic systems, improving system scalability and fault tolerance.",
