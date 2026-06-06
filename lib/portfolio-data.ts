@@ -88,7 +88,7 @@ export const projects: Project[] = [
     command: "./forge build --release",
     description: "The modern Enterprise Service Bus (ESB) system replaces the outdated system - IBM Integration Bus (IIB), which integrates with NAPAS IBFT v2.0.",
     details: [
-      "Architected, deployed infrastructure and applications across environments, ensuring compliance with PCI DSS, and achieved SLI 99%",
+      "Architected, deployed infrastructure and applications across environments, ensuring compliance with PCI DSS, and achieved SLI 99%.",
       "Implemented a full-stack observability solution using Instana, including 100% microservices monitoring and the OpenShift cluster.",
     ],
     stack: ["Red Hat OpenShift", "IBM Fusion", "IBM CP4I", "IBM ACE", "IBM MQ", "IBM Instana", "ISO 8583"],
