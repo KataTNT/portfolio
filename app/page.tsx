@@ -15,14 +15,13 @@ export default function Home() {
         <TerminalWindow id="about" title="kata@portfolio:~ — bootlog" className="min-h-[20rem]">
           <HeroBoot />
         </TerminalWindow>
-
+        
+        <ProjectsWindow />
+        <ExperienceWindow />
         <div className="grid gap-6 lg:grid-cols-2">
           <SkillsWindow />
-          <ProjectsWindow />
+          <CertificatesWindow />
         </div>
-
-        <ExperienceWindow />
-        <CertificatesWindow />
         <ContactWindow />
 
         <footer className="py-4 text-center text-xs text-muted-foreground">
