@@ -10,7 +10,7 @@ export function ProjectsWindow() {
   const [open, setOpen] = useState<string | null>(projects[0]?.id ?? null)
 
   return (
-    <TerminalWindow id="projects" title="~/projects — ls -la" command="ls projects/ --details">
+    <TerminalWindow id="projects" title="~/projects" command="ls -la projects/">
       <ul className="flex flex-col divide-y divide-border">
         {projects.map((project) => {
           const isOpen = open === project.id
