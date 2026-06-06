@@ -27,8 +27,8 @@ export function ProjectsWindow() {
                   aria-hidden="true"
                 />
                 <FolderGit2 className="size-4 shrink-0 text-accent" aria-hidden="true" />
-                <span className="font-semibold text-foreground">{project.name}</span>
-                <span className="ml-auto hidden truncate text-xs text-muted-foreground sm:block">
+                <span className="shrink-0 whitespace-nowrap font-semibold text-foreground">{project.name}</span>
+                <span className="ml-auto hidden text-wrap text-xs text-muted-foreground sm:block">
                   {project.description}
                 </span>
               </button>
