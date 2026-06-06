@@ -4,7 +4,7 @@ import { TerminalWindow } from "@/components/terminal-window"
 export function SkillsWindow() {
   return (
     <TerminalWindow id="skills" title="~/skills — installed packages" command="apt list --installed">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4">
         {skills.map((group) => (
           <div key={group.category} className="flex flex-col gap-2">
             <p className="text-xs">
@@ -12,23 +12,17 @@ export function SkillsWindow() {
               <span className="text-muted-foreground">apt list --installed</span>{" "}
               <span className="text-accent">{group.category}/*</span>
             </p>
-            <ul className="flex flex-col gap-1 pl-4">
-              {group.items.map((pkg) => (
-                <li
-                  key={pkg.name}
-                  className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 rounded-sm px-1 py-0.5 text-xs hover:bg-secondary"
+            <div className="flex flex-wrap gap-2 pl-4">
+              {group.items.map((skill) => (
+                <span
+                  key={skill}
+                  className="inline-flex items-center gap-1.5 rounded-sm border border-border bg-secondary px-2.5 py-1 text-xs font-mono text-foreground"
                 >
-                  <span className="text-terminal-green font-bold" aria-label="installed">
-                    [ok]
-                  </span>
-                  <span className="min-w-[8rem] font-bold text-foreground">{pkg.name}</span>
-                  <span className="min-w-[4rem] text-accent">{pkg.version}</span>
-                  <span className="text-muted-foreground">
-                    <span className="text-border">—</span> {pkg.desc}
-                  </span>
-                </li>
+                  <span className="text-terminal-green" aria-hidden="true">✓</span>
+                  {skill}
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
         <p className="text-xs">
