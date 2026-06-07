@@ -56,7 +56,7 @@ export default function Home() {
 
         {visibleCount >= 4 && (
           <footer className="py-4 text-center text-xs text-muted-foreground">
-            <span className="text-terminal-green">$</span> echo &quot;built with terminal energy · {new Date().getFullYear()}&quot;
+            <span className="text-terminal-green">$</span> echo &quot;built with terminal energy &middot; &copy; {new Date().getFullYear()} &middot; {profile.nickname}&quot;
           </footer>
         )}
       </main>
