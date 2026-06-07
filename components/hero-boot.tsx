@@ -69,7 +69,7 @@ export function HeroBoot({ onComplete }: HeroBootProps) {
             </span>
           </div>
           <p className="mt-2 text-xs text-muted-foreground cursor-blink">
-            <span className="text-terminal-green">{profile.handle}:~$</span> ./explore<pre> --sections</pre>
+            <span className="text-terminal-green">{profile.handle}:~$</span>./explore&nbsp;--sections
           </p>
         </div>
       )}
