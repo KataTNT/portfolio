@@ -11,7 +11,11 @@ const bootLines = [
   "[ OK ] Profile loaded.",
 ]
 
-export function HeroBoot() {
+type HeroBootProps = {
+  onComplete?: () => void
+}
+
+export function HeroBoot({ onComplete }: HeroBootProps) {
   const [visibleLines, setVisibleLines] = useState(0)
   const [showProfile, setShowProfile] = useState(false)
 
@@ -23,6 +27,12 @@ export function HeroBoot() {
     const t = setTimeout(() => setShowProfile(true), 350)
     return () => clearTimeout(t)
   }, [visibleLines])
+
+  useEffect(() => {
+    if (!showProfile) return
+    const t = setTimeout(() => onComplete?.(), 600)
+    return () => clearTimeout(t)
+  }, [showProfile, onComplete])
 
   return (
     <div className="flex flex-col gap-1 font-mono text-xs sm:text-sm">
@@ -59,7 +69,7 @@ export function HeroBoot() {
             </span>
           </div>
           <p className="mt-2 text-xs text-muted-foreground cursor-blink">
-            <span className="text-terminal-green">{profile.handle}:~$</span> ./explore -sections
+            <span className="text-terminal-green">{profile.handle}:~$</span> ./explore<pre> --sections</pre>
           </p>
         </div>
       )}
