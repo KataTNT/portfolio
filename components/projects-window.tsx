@@ -10,7 +10,7 @@ export function ProjectsWindow() {
   const [open, setOpen] = useState<string | null>(projects[0]?.id ?? null)
 
   return (
-    <TerminalWindow id="projects" title="~/projects" command="ls -l projects/">
+    <TerminalWindow id="projects" title="~/projects" command="ls projects/ --details">
       <ul className="flex flex-col divide-y divide-border">
         {projects.map((project) => {
           const isOpen = open === project.id
@@ -27,8 +27,8 @@ export function ProjectsWindow() {
                   aria-hidden="true"
                 />
                 <FolderGit2 className="size-4 shrink-0 text-accent" aria-hidden="true" />
-                <span className="shrink-0 whitespace-nowrap font-semibold text-foreground">{project.name}</span>
-                <span className="ml-auto hidden text-wrap text-xs text-muted-foreground sm:block">
+                <span className="w-40 shrink-0 truncate whitespace-nowrap font-semibold text-foreground">{project.name}</span>
+                <span className="hidden flex-1 text-wrap text-xs text-muted-foreground sm:block">
                   {project.description}
                 </span>
               </button>
