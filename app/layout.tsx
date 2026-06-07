@@ -2,7 +2,6 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { profile } from '@/lib/portfolio-data'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
 const geistMono = Geist_Mono({
@@ -11,8 +10,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: '{profile.nickname}@portfolio:~ | Portfolio',
-  description: '{profile.metadata_description}',
+  title: 'kata@portfolio:~ | Portfolio',
+  description: 'DevOps Engineer portfolio — infrastructure, automation, and cloud terminal.',
   icons: {
     icon: [
       {
