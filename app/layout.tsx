@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: '{profile.nickname}@portfolio:~ | Portfolio',
-  description: '{profile.description}',
+  description: '{profile.metadata_description}',
   icons: {
     icon: [
       {
