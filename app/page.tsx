@@ -57,7 +57,7 @@ export default function Home() {
 
         {visibleCount >= 4 && (
           <footer className="py-4 text-center text-xs text-muted-foreground">
-            <span className="text-terminal-green">$</span> echo &quot&copy; {new Date().getFullYear()} &middot; {profile.nickname} &middot; All Rights Reserved.&quot;
+            <span className="text-terminal-green">$</span> echo &quot;&copy; {new Date().getFullYear()} {profile.nickname}. All rights reserved.&quot;
           </footer>
         )}
       </main>
