@@ -8,7 +8,7 @@ const navItems = [
   { label: "projects", href: "#projects" },
   { label: "experience", href: "#experience" },
   { label: "skills", href: "#skills" },
-  { label: "certs", href: "#certificates" },
+  { label: "certificates", href: "#certificates" },
   { label: "contact", href: "#contact" },
 ]
 
@@ -18,7 +18,7 @@ export function TopNav() {
       <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
         <a href="#about" className="flex items-center gap-2 text-terminal-green">
           <Terminal className="size-4" aria-hidden="true" />
-          <span className="text-sm font-bold">{profile.nickname}@portfolio</span>
+          <span className="text-sm font-bold">{profile.handle}</span>
         </a>
         <ul className="ml-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-xs">
           {navItems.map((item) => (
