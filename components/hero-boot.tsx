@@ -49,7 +49,7 @@ export function HeroBoot({ onComplete }: HeroBootProps) {
             <span className="text-terminal-green">{profile.handle}:~$</span> whoami
           </p>
           <h1 className="text-balance text-3xl font-bold text-terminal-green text-glow sm:text-4xl">
-            {profile.name}
+            {profile.name} ({profile.nickname})
           </h1>
           <p className="text-pretty text-base text-accent sm:text-lg">{profile.role}</p>
           <p className="max-w-2xl text-pretty leading-relaxed text-foreground/90">{profile.summary}</p>
