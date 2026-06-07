@@ -85,8 +85,8 @@ export const projects: Project[] = [
     stack: ["Kubernetes", "Cilium", "HashiCorp Vault", "GitLab CI", "Jenkins", "Helm", "Ansible", "Harbor", "Nexus", "NGINX", "RabbitMQ", "Redis", "MySQL", "Spring Boot", "Angular JS"],
   },
   {
-    id: "esb-ibft",
-    name: "esb-ibft",
+    id: "esb-ibft-v2",
+    name: "esb-ibft-v2",
     command: "./esb upgrade",
     description: "The modern Enterprise Service Bus (ESB) system replaces the outdated system - IBM Integration Bus (IIB), which integrates with NAPAS IBFT v2.0.",
     details: [
@@ -105,6 +105,19 @@ export const projects: Project[] = [
       "Implemented and managed Kong Ingress Controller on Kubernetes cluster to standardize API Gateway services, improving API routing efficiency.",
     ],
     stack: ["Kubernetes", "Kong", "Kafka", "PostgreSQL", "Spring Boot"],
+  },
+  {
+    id: "visa-card",
+    name: "visa-card",
+    command: "./appsrvctl creinst app_name=visa",
+    description: "The Bank's Visa Card issuing and processing system implementation",
+    details: [
+      "Cooperated with Visa engineers to implement Visa Extended Access Server (EAS) for connecting to Visa Net.",
+      "Implemented Visa Secure (3-D Secure) using EMV 3DS protocols through an Access Control Server (ACS) provider to enhance security for online card-not-present (CNP) transactions.",
+      "Ensured secure compliance by generating and exchanging cryptographic keys (covers ZMK, IWK, CVK, PVK, CAK, MDK) with Visa using Payment HSM, generating and storing SSL certificates using General Purpose HSM.",
+      "Deployed Visa Test System (VTS) for simulator testing, Visa PC Edit Packages (PCEP) for transferring and processing files between Visa and bank, Oracle Reports for Visa Card billing statement.",
+    ],
+    stack: ["Way4 Platform", "Visa Secure", "Payment HSM", "General Purpose HSM", "RHEL", "Windows Server", "Oracle Linux", "Oracle Database", "Oracle Reports", "Visa VTS", "Visa PCEP", "ISO 8583"],
   },
 ]
 
