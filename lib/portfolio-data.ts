@@ -104,13 +104,13 @@ export const projects: Project[] = [
       "Rearchitected & deployed a highly scalable notification system on the cloud-native platform, improving throughput and resilience for critical banking operations.",
       "Implemented and managed Kong Ingress Controller on Kubernetes cluster to standardize API Gateway services, improving API routing efficiency.",
     ],
-    stack: ["Kubernetes", "Kong", "Kafka", "PostgreSQL", "Spring Boot"],
+    stack: ["HIGIO Cloud", "Kubernetes", "Kong", "Kafka", "PostgreSQL", "Spring Boot"],
   },
   {
     id: "visa-card",
     name: "visa-card",
     command: "./appsrvctl creinst app_name=visa",
-    description: "The Bank's Visa Card issuing and processing system implementation",
+    description: "The Bank's Visa Card issuing and processing system implementation.",
     details: [
       "Cooperated with Visa engineers to implement Visa Extended Access Server (EAS) for connecting to Visa Net.",
       "Implemented Visa Secure (3-D Secure) using EMV 3DS protocols through an Access Control Server (ACS) provider to enhance security for online card-not-present (CNP) transactions.",
