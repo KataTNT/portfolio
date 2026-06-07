@@ -12,7 +12,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'kata@portfolio:~ | Portfolio',
   description: 'DevOps Engineer portfolio — infrastructure, automation, and cloud terminal.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -41,7 +40,7 @@ export default function RootLayout({
     <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable} bg-background`}>
       <body className="font-mono antialiased scanlines">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production'}
       </body>
     </html>
   )
