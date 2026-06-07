@@ -13,6 +13,7 @@ export const profile = {
   github_url: "https://github.com/KataTNT",
   linkedin_username: "triettn",
   linkedin_url: "https://linkedin.com/in/triettn",
+  metadata_description: "DevOps Engineer portfolio — infrastructure, automation, and cloud terminal."
 }
 
 export type SkillGroup = {
