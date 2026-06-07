@@ -1,5 +1,6 @@
 export const profile = {
   name: "Triet Thai",
+  nickname: "Kata",
   handle: "kata@portfolio",
   role: "Senior DevOps Engineer",
   location: "Ho Chi Minh City, VN",
