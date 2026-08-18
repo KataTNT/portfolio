@@ -35,8 +35,12 @@ export const skills: SkillGroup[] = [
     items: [ "vmware" ],
   },
   {
-    category: "iac",
-    items: [ "terraform", "ansible", "helm", "kustomize", "inspec" ],
+    category: "infrastructure_as_code",
+    items: [ "terraform", "ansible", "helm", "kustomize" ],
+  },
+  {
+    category: "compliance_as_code",
+    items: [ "opa", "kyverno", "inspec" ]
   },
   {
     category: "ci_cd",
@@ -56,8 +60,12 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "scritping",
-    items: [ "bash" ],
+    items: [ "bash", "python", "powershell", "powercli" ],
   },
+  {
+    category: "security",
+    items: [ "hashicorp_vault", "trivy", "nessus", "sonarqube", "falco", "hydra", "kubesec", "kube-bench" ]
+  }
 ]
 
 export type Project = {
