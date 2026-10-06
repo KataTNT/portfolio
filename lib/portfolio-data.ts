@@ -239,7 +239,7 @@ export const certificates: Certificate[] = [
     name: "HashiCorp Certified: Terraform Associate (003)",
     issuer: "HashiCorp",
     date: "2025/11",
-    credentialId: "",
+    credentialId: "CV25F08722",
     verifyUrl: "https://www.credly.com/badges/68772038-7a33-4e21-948c-3db00c7d2be9/",
   },
 ]
