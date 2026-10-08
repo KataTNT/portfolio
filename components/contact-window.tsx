@@ -2,13 +2,13 @@ import { Mail, Code2, Globe } from "lucide-react"
 import { profile } from "@/lib/portfolio-data"
 import { TerminalWindow } from "@/components/terminal-window"
 
-const links = [
-  { label: "email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
-  { label: "github", value: profile.github_username, href: profile.github_url, Icon: Code2 },
-  { label: "linkedin", value: profile.linkedin_username, href: profile.linkedin_url, Icon: Globe },
-]
-
 export function ContactWindow() {
+  const links = [
+    { label: "email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
+    { label: "github", value: profile.github_username, href: profile.github_url, Icon: Code2 },
+    { label: "linkedin", value: profile.linkedin_username, href: profile.linkedin_url, Icon: Globe },
+  ]
+
   return (
     <TerminalWindow id="contact" title="~/contact" command="contact/init-connection.sh">
       <p className="text-pretty leading-relaxed text-foreground/90">
