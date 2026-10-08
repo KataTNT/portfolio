@@ -3,6 +3,19 @@
 import { useEffect, useState } from "react"
 import { profile } from "@/lib/portfolio-data"
 
+ 
+function calcUptime(startDate: string): string {
+  const start = new Date(startDate)
+  const now = new Date()
+  let years = now.getFullYear() - start.getFullYear()
+  let months = now.getMonth() - start.getMonth()
+  if (months < 0) { years -= 1; months += 12 }
+  const parts = []
+  if (years > 0) parts.push(`${years}y`)
+  if (months > 0) parts.push(`${months}mo`)
+  return parts.join(" ") || "< 1mo"
+}
+
 const bootLines = [
   "[ OK ] Mounting infrastructure volumes...",
   "[ OK ] Starting kubelet.service...",
@@ -58,7 +71,7 @@ export function HeroBoot({ onComplete }: HeroBootProps) {
               <span className="text-terminal-amber">loc:</span> {profile.location}
             </span>
             <span>
-              <span className="text-terminal-amber">uptime:</span> {profile.uptime}
+              <span className="text-terminal-amber">uptime:</span> {calcUptime(profile.career_start)}
             </span>
             <span className="flex items-center gap-2">
               <span className="text-terminal-amber">status:</span>

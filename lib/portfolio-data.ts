@@ -7,7 +7,7 @@ export const profile = {
   summary:
     "I build and operate resilient, automated infrastructure at scale. Specialized in Kubernetes, CI/CD pipelines, observability, and turning chaos into self-healing systems.",
   status: "open_to_work",
-  uptime: "10y 9mo",
+  career_start: "2014-12-01",
   email: "tnt.kata1894@gmail.com",
   github_username: "KataTNT",
   github_url: "https://github.com/KataTNT",
