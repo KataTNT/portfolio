@@ -59,7 +59,7 @@ export const skills: SkillGroup[] = [
     items: [ "rabbitmq", "kafka" ],
   },
   {
-    category: "scritping",
+    category: "scripting",
     items: [ "bash", "python", "powershell", "powercli" ],
   },
   {
