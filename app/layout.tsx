@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
@@ -41,7 +40,6 @@ export default function RootLayout({
     <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable} bg-background`}>
       <body className="font-mono antialiased scanlines">
         {children}
-        {process.env.NODE_ENV === 'production'}
       </body>
     </html>
   )
