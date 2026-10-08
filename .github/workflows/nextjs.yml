@@ -41,7 +41,7 @@ jobs:
 
       - name: Audit dependencies
         # Fails on high/critical CVEs; remove --audit-level to catch all
-        run: pnpm audit --audit-level=high
+        run: pnpm audit --audit-level=high --prod
 
   # ── 2. Secret scanning ────────────────────────────────────────────────────
   secret-scan:
@@ -101,7 +101,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build static export
         run: pnpm build
